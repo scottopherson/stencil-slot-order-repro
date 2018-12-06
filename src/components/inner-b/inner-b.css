@@ -1,0 +1,9 @@
+inner-b {
+  display: block;
+  background: rgba(0,0,0,0.05);
+  margin: 1em;
+}
+
+inner-b::before {
+  content: 'Inner B';
+}

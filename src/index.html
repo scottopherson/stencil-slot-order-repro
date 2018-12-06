@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/mycomponent.js"></script>
+  <style>
+    p {
+      display: block;
+      background: rgba(0,0,0,0.05);
+      margin: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <p>✅ shadow:true | whitespace</p>
+  <outer-a>
+    <p>Slotted 1 🥇</p>
+    <p>Slotted 2 🥈</p>
+    <p>Slotted 3 🥉</p>
+  </outer-a>
+
+  <hr />
+
+  <p>✅ shadow:true | no whitespace</p>
+  <outer-a><p>Slotted 1 🥇</p><p>Slotted 2 🥈</p><p>Slotted 3 🥉</p></outer-a>
+
+  <hr />
+
+  <p>✅ shadow:false | whitespace</p>
+  <outer-b>
+    <p>Slotted 1 🥇</p>
+    <p>Slotted 2 🥈</p>
+    <p>Slotted 3 🥉</p>
+  </outer-b>
+
+  <hr />
+
+  <p>‼️ shadow:false | no whitespace</p>
+  <outer-b><p>Slotted 1 🥇</p><p>Slotted 2 🥈</p><p>Slotted 3 🥉</p></outer-b>
+
+  <hr />
+
+  <p>✅ two top-level | shadow:true | whitespace</p>
+  <outer-c>
+    <p>Slotted 1 🥇</p>
+    <p>Slotted 2 🥈</p>
+    <p>Slotted 3 🥉</p>
+  </outer-c>
+
+  <hr />
+
+  <p>✅ two top-level | shadow:true | no whitespace</p>
+  <outer-c><p>Slotted 1 🥇</p><p>Slotted 2 🥈</p><p>Slotted 3 🥉</p></outer-c>
+
+  <hr />
+
+  <p>‼️ two top-level | shadow:false | whitespace</p>
+  <outer-d>
+    <p>Slotted 1 🥇</p>
+    <p>Slotted 2 🥈</p>
+    <p>Slotted 3 🥉</p>
+  </outer-d>
+
+  <hr />
+
+  <p>‼️ two top-level | shadow:false | no whitespace</p>
+  <outer-d><p>Slotted 1 🥇</p><p>Slotted 2 🥈</p><p>Slotted 3 🥉</p></outer-d>
+
+</body>
+</html>
